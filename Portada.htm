@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	background-image: url();
+	background-color: #00FF99;
+}
+body,td,th {
+	color: #00FF99;
+	font-weight: bold;
+}
+.style1 {
+	font-size: 36px;
+	color: #00FFCC;
+}
+.style4 {
+	color: #000033;
+	font-size: 36px;
+}
+.style6 {color: #0033FF}
+.style7 {color: #CC9933}
+.style9 {color: #FFFFFF}
+.style10 {font-size: xx-small}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+<body>
+<div id="Layer6" style="position:absolute; left:1047px; top:10px; width:348px; height:184px; z-index:6"><img src="CINVESTAV_Animaci&#243;n_de_Logotipo.gif" width="345" height="183"></div>
+<link rel="stylesheet" href="backbox.css" type="text/css" />
+<div id="Layer1" class="style1" style="position:absolute; left:266px; top:10px; width:937px; height:187px; z-index:1">
+  <div align="center"><h2 align="center">
+<script language="JavaScript1.2">
+
+var message="PULSOS DE CIENCIA"
+var neonbasecolor="gray"
+var neontextcolor="black"
+var flashspeed=100  //in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+//eval("document.all.neonlight"+m).style.color=neonbasecolor
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",1500)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script>
+<br />
+</h2>
+
+</div>
+</div>
+<div id="Layer2" style="position:absolute; left:143px; top:404px; width:360px; height:234px; z-index:2"><img src="../../Documentos/proyecto%20de%20ricardo/cerebro.gif" width="363" height="233" border="0" usemap="#Map">
+  <map name="Map">
+    <area shape="circle" coords="188,108,143" href="portada%202.htm">
+  </map>
+</div>
+<div id="Layer3" style="position:absolute; left:13px; top:664px; width:1339px; height:80px; z-index:3">
+  <script>
+//set style for NS4 to ''
+if (document.layers)
+var ns4def=''
+</script>
+
+<h2 id="flyin" style="position:relative;left:-800px;font-style:italic" style=&{ns4def};> 
+<span class="style4"><span class="style9">El cerebro y la ciudad</span>___<span class="style6">Mas all&aacute; de la alimentaci&oacute;n</span>___<span class="style7">La alimentaci&oacute;n y tu entorno</span></span></h2>
+
+
+<script language="JavaScript1.2">
+
+/*
+Fly-in Header script (credit must stay enclosed)
+By javascriptkit.com
+For this and over 400+ JavaScripts,
+Visit http://www.javascriptkit.com
+*/
+
+
+if (document.getElementById||document.all)
+var crossheader=document.getElementById? document.getElementById("flyin").style : document.all.flyin.style
+
+function animatein(){
+if (parseInt(crossheader.left)<0)
+crossheader.left=parseInt(crossheader.left)+20+"px"
+else{
+crossheader.left=0
+crossheader.fontStyle="normal"
+clearInterval(start)
+}
+}
+
+if (document.getElementById||document.all)
+start=setInterval("animatein()",50)
+
+
+</script>
+</div>
+<div id="Layer4" style="position:absolute; left:569px; top:401px; width:329px; height:230px; z-index:4"><img src="../../Documentos/proyecto%20de%20ricardo/tierra-planeta.gif" width="354" height="230" border="0" usemap="#Map2">
+  <map name="Map2">
+    <area shape="circle" coords="170,118,119" href="portada%203.htm">
+  </map>
+</div>
+<div id="Layer5" style="position:absolute; left:989px; top:403px; width:372px; height:227px; z-index:5"><img src="../../Documentos/proyecto%20de%20ricardo/alimentacion.gif" width="374" height="231" border="0" usemap="#Map3">
+  <map name="Map3">
+    <area shape="rect" coords="14,9,357,223" href="portada%204.htm">
+  </map>
+</div>
+</body>
+</html>
